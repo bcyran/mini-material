@@ -1,0 +1,60 @@
+// Button
+.button {
+    display: inline-block;
+    height: $button-height;
+    padding: 0 $button-sides-padding;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: $button-font-weight;
+    line-height: $button-height;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 100ms ease-in;
+
+    &:hover {
+        opacity: 0.9;
+    }
+    
+    &:active {
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+        opacity: 0.8;
+    }
+    
+    // Disabled Button
+    &--disabled {
+        @extend .button;
+        background-color: $button-disabled-background !important;
+        color: $button-disabled-color;
+        opacity: 1 !important;
+        box-shadow: none !important;
+        cursor: default;
+    }
+}
+
+
+// Fixed Action Button
+.fab {
+    @extend .button;
+    border-radius: 50%;
+    position: fixed;
+    right: $fab-position;
+    bottom: $fab-position;
+    width: $fab-radius;
+    height: $fab-radius;
+    line-height: $fab-radius;
+    text-align: center;
+
+    // Disabled Fixed Action Button
+    &--disabled {
+        @extend .fab;
+        background-color: $button-disabled-background !important;
+        color: $button-disabled-color;
+        opacity: 1 !important;
+        box-shadow: none !important;
+        cursor: default;
+    }
+}

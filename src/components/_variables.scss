@@ -1,0 +1,22 @@
+// Buttons
+$button-height: 36px !default;
+$button-sides-padding: 16px !default;
+$button-font-weight: 500 !default;
+$button-disabled-background: #DFDFDF !default;
+$button-disabled-color: #9F9F9F !default;
+
+$fab-radius: 64px !default;
+$fab-position: 48px !default;
+
+
+// Headers
+$header-sides-padding: 32px !default;
+$header-content-width: 100% !default;
+$menu-item-sides-padding: 16px !default;
+
+$large-header-title-height: 64px !default;
+$large-header-title-line-height: $large-header-title-height !default;
+$large-header-nav-height: 64px !default;
+$large-header-height: ($large-header-title-height + $large-header-nav-height) !default;
+
+$compact-header-height: 64px !default;
