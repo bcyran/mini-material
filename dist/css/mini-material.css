@@ -448,3 +448,70 @@ html {
 .typography--underline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
+
+.text-field {
+  position: relative;
+}
+.text-field__input {
+  background: transparent !important;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  height: 36px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #757575;
+  outline: none;
+  margin-top: 12px;
+  padding: 0;
+  transition: border-bottom 100ms ease-in;
+}
+.text-field__input:focus {
+  border-bottom: 1px solid #4CAF50;
+}
+.text-field__input:focus + label {
+  color: #4CAF50;
+}
+.text-field__input--textarea {
+  font-family: inherit;
+  color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+.text-field__input--textarea:focus {
+  color: #757575;
+}
+.text-field__input--textarea.text-field__input--expandable {
+  resize: vertical;
+}
+.text-field__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  transition: all 100ms ease-in;
+  cursor: text;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: 300;
+}
+
+:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: 300;
+}
+
+::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: 300;
+}
+
+:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: 300;
+}
