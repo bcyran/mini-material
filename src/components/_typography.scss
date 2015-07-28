@@ -1,0 +1,67 @@
+// Global Font Style
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: $page-font-size;
+    line-height: 1.4em;
+}
+
+// Headers
+.heading {
+    &--1 {
+        font-size: 4rem;
+        font-weight: 300;
+        line-height: 4rem;
+        margin: 1.2rem 0 0.8rem 0;
+    }
+
+    &--2 {
+        font-size: 3.4rem;
+        font-weight: 300;
+        line-height: 3.4rem;
+        margin: 1.2rem 0 0.8rem 0;
+    }
+
+    &--3 {
+        font-size: 2.8rem;
+        font-weight: 300;
+        line-height: 2.8rem;
+        margin: 1.2rem 0 0.8rem 0;
+    }
+
+    &--4 {
+        font-size: 2.2rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+        margin: 1.2rem 0 0.8rem 0;
+    }
+
+    &--5 {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.6rem;
+        margin: 1rem 0 0.6rem 0;
+    }
+
+    &--6 {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1rem;
+        margin: 0.8rem 0 0.4rem 0;
+    }
+}
+
+// Styles
+.typography {
+    &--strong {
+        font-weight: 400;
+    }
+
+    &--emphasis {
+        font-style: italic;
+    }
+
+    &--underline {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+}

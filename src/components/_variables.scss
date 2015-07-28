@@ -22,8 +22,11 @@ $menu-item-sides-padding: 16px !default;
     $compact-header-height: 64px !default;
 
 // Layout
-$page-content-padding-top: 48px;
+$page-content-padding-top: 48px !default;
 
 // Cards
-$card-padding: 32px;
-$card-margin-bottom: 48px;
+$card-padding: 32px !default;
+$card-margin-bottom: 48px !default;
+
+// Typography
+$page-font-size: 16px;

@@ -1,7 +1,5 @@
 html {
   box-sizing: border-box;
-  font-family: 'Roboto';
-  font-weight: 300;
 }
 
 body {
@@ -204,6 +202,7 @@ body {
   height: 64px;
   width: calc(100% + $menu-item-sides-padding);
   margin-left: -16px;
+  font-weight: 400;
 }
 .page-header--large .nav__list {
   height: 64px;
@@ -267,6 +266,7 @@ body {
   -webkit-flex-basis: 66.66667%;
       -ms-flex-preferred-size: 66.66667%;
           flex-basis: 66.66667%;
+  font-weight: 400;
 }
 .page-header--compact .nav__list {
   height: 100%;
@@ -393,4 +393,58 @@ body {
 .card__actions {
   padding: 8px 32px 8px 32px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+
+.heading--1 {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 4rem;
+  margin: 1.2rem 0 0.8rem 0;
+}
+.heading--2 {
+  font-size: 3.4rem;
+  font-weight: 300;
+  line-height: 3.4rem;
+  margin: 1.2rem 0 0.8rem 0;
+}
+.heading--3 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 2.8rem;
+  margin: 1.2rem 0 0.8rem 0;
+}
+.heading--4 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  margin: 1.2rem 0 0.8rem 0;
+}
+.heading--5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  margin: 1rem 0 0.6rem 0;
+}
+.heading--6 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  margin: 0.8rem 0 0.4rem 0;
+}
+
+.typography--strong {
+  font-weight: 400;
+}
+.typography--emphasis {
+  font-style: italic;
+}
+.typography--underline {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
