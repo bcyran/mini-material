@@ -18,7 +18,7 @@
     }
 
     &__actions {
-        padding: ($card-padding / 4) $card-padding ($card-padding / 4) $card-padding;
+        padding: ($card-padding / 4) $card-padding ($card-padding / 4) ($card-padding - $button-sides-padding);
         border-top: 1px solid rgba(0, 0, 0, 0.1);
 
         &__button {
