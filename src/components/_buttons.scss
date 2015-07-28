@@ -13,7 +13,7 @@
     line-height: $button-height;
     vertical-align: middle;
     cursor: pointer;
-    transition: all 100ms ease-in;
+    transition: all $transition_duration ease-in;
 
     &:hover {
         opacity: 0.9;
