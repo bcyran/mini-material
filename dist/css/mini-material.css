@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-family: 'Roboto';
-  font-weight: 400;
+  font-weight: 300;
 }
 
 body {
@@ -313,7 +313,7 @@ body {
   padding: 48px 8px 8px 8px;
 }
 
-.button, .fab {
+.button, .fab, .card__actions__button {
   display: inline-block;
   height: 36px;
   padding: 0 16px;
@@ -329,23 +329,23 @@ body {
   cursor: pointer;
   transition: all 100ms ease-in;
 }
-.button:hover, .fab:hover {
+.button:hover, .fab:hover, .card__actions__button:hover {
   opacity: 0.9;
 }
-.button:active, .fab:active {
+.button:active, .fab:active, .card__actions__button:active {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   opacity: 0.8;
 }
-.button--flat {
+.button--flat, .card__actions__button {
   box-shadow: none !important;
 }
-.button--flat:hover {
+.button--flat:hover, .card__actions__button:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
-.button--flat:active {
+.button--flat:active, .card__actions__button:active {
   background-color: rgba(0, 0, 0, 0.2);
 }
-.button--flat.button--disabled {
+.button--flat.button--disabled, .button--disabled.card__actions__button {
   background-color: transparent !important;
 }
 .button--disabled {
@@ -377,6 +377,20 @@ body {
 .card {
   border-radius: 2px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  padding: 16px;
   margin: 0 0 48px 0;
+  padding: 0;
+  text-align: justify;
+}
+.card__title {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0;
+  padding: 32px 32px 0 32px;
+}
+.card__content {
+  padding: 16px 32px 32px 32px;
+}
+.card__actions {
+  padding: 8px 32px 8px 32px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
