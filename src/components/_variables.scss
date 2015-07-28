@@ -2,12 +2,11 @@
 $button-height: 36px !default;
 $button-sides-padding: 16px !default;
 $button-font-weight: 500 !default;
-$button-disabled-background: #DFDFDF !default;
-$button-disabled-color: #9F9F9F !default;
+	$button-disabled-background: #DFDFDF !default;
+	$button-disabled-color: #9F9F9F !default;
 
-$fab-radius: 64px !default;
-$fab-position: 48px !default;
-
+	$fab-radius: 64px !default;
+	$fab-position: 48px !default;
 
 // Headers
 $header-sides-padding: 32px !default;
@@ -29,4 +28,4 @@ $card-padding: 32px !default;
 $card-margin-bottom: 48px !default;
 
 // Typography
-$page-font-size: 16px;
+$page-font-size: 16px !default;

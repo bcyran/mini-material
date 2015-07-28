@@ -7,6 +7,7 @@
         height: $large-header-height;
         width: 100%;
 
+        // Page Title
         .page-title {
             height: $large-header-title-height;
             width: $header-content-width;
@@ -21,6 +22,7 @@
             }
         }
 
+        // Menu
         .nav {
             height: $large-header-nav-height;
             width: calc(100% + $menu-item-sides-padding);
@@ -74,6 +76,7 @@
         height: $compact-header-height;
         width: 100%;
 
+        // Page Title
         .page-title {
             height: 100%;
             flex-basis: ($header-content-width * 1/3);
@@ -88,6 +91,7 @@
             }
         }
 
+        // Menu
         .nav {
             height: $compact-header-height;
             flex-basis: ($header-content-width * 2/3);
