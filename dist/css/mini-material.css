@@ -1,9 +1,11 @@
 html {
   box-sizing: border-box;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-  margin: 0;
+  margin: 0 0 64px 0;
   padding: 0;
 }
 
@@ -514,4 +516,36 @@ html {
 :-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.2);
   font-weight: 300;
+}
+
+.page-footer {
+  height: 64px;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page-footer__left {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  text-align: left;
+  padding: 0 0 0 32px;
+}
+.page-footer__right {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  text-align: right;
+  padding: 0 32px 0 0;
 }

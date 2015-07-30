@@ -1,9 +1,11 @@
 html {
     box-sizing: border-box;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-    margin: 0;
+    margin: 0 0 $footer-height 0;
     padding: 0;
 }
 

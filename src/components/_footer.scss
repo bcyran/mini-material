@@ -1,0 +1,26 @@
+// Footer
+.page-footer {
+    height: $footer-height;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: $footer-font-size;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+
+    // Left Aligned Content
+    &__left {
+        flex-basis: ($footer-content-width / 2);
+        text-align: left;
+        padding: 0 0 0 $footer-sides-padding;
+    }
+
+    // Right Aligned Content
+    &__right {
+        flex-basis: ($footer-content-width / 2);
+        text-align: right;
+        padding: 0 $footer-sides-padding 0 0;
+    }
+}
