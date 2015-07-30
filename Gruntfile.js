@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'dist/css/mini-material.css': 'src/mini-material.scss'
+                    'dist/mini-material.css': 'src/mini-material.scss'
                 }
             },
             compressed: {
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'dist/css/mini-material.min.css': 'src/mini-material.scss'
+                    'dist/mini-material.min.css': 'src/mini-material.scss'
                 }
             }
         },
@@ -25,8 +25,8 @@ module.exports = function(grunt) {
         autoprefixer: {
             dist: {
                 files:{
-                    'dist/css/mini-material.css': 'dist/css/mini-material.css',
-                    'dist/css/mini-material.min.css': 'dist/css/mini-material.min.css'
+                    'dist/mini-material.css': 'dist/mini-material.css',
+                    'dist/mini-material.min.css': 'dist/mini-material.min.css'
                 }
             }
         },
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
                     report: 'min',
                 },
                 files:{
-                    'dist/css/mini-material.min.css': 'dist/css/mini-material.min.css'
+                    'dist/mini-material.min.css': 'dist/mini-material.min.css'
                 }
             }
         },
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 
             livereload: {
                 options: { livereload: true },
-                files: ['dist/**/*'],
+                files: ['dist/**/*', 'demo/**/*'],
             },
         }
 
