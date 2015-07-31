@@ -1,0 +1,38 @@
+// Screen Sizes (s, m, l, xl)
+$screens: (
+    (s none $breakpoint-s-m)
+    (m ($breakpoint-s-m + 1) $breakpoint-m-l)
+    (l ($breakpoint-m-l + 1) $breakpoint-l-xl)
+    (xl ($breakpoint-l-xl + 1) none)
+);
+
+// Generating Hide Classes
+@each $screen in $screens {
+    $name: nth($screen, 1);
+    $from: nth($screen, 2);
+    $to: nth($screen, 3);
+    
+    .hide {
+        @if $to != none {
+            &--#{$name}--down {
+                @media only screen and (max-width: $to) {
+                    display: none !important;
+                }
+            }
+        }
+
+        &--#{$name} {
+            @media only screen and (min-width: $from) and (max-width: $to) {
+                display: none !important;
+            }
+        }
+
+        @if $from != none {
+            &--#{$name}--up {
+                @media only screen and (min-width: $from) {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
