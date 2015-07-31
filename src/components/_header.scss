@@ -28,6 +28,9 @@
             width: calc(100% + $menu-item-sides-padding);
             margin-left: -$menu-item-sides-padding;
             font-weight: 400;
+            overflow-y: hidden;
+            overflow-x: auto;
+            white-space: nowrap;
 
             &__list {
                 height: $large-header-nav-height;
@@ -96,6 +99,9 @@
             height: $compact-header-height;
             flex-basis: ($header-content-width * 2/3);
             font-weight: 400;
+            overflow-y: hidden;
+            overflow-x: auto;
+            white-space: nowrap;
 
             &__list {
                 height: 100%;

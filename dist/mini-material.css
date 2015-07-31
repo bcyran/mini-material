@@ -205,6 +205,9 @@ body {
   width: calc(100% + $menu-item-sides-padding);
   margin-left: -16px;
   font-weight: 400;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 .page__header--large .nav__list {
   height: 64px;
@@ -269,6 +272,9 @@ body {
       -ms-flex-preferred-size: 66.66667%;
           flex-basis: 66.66667%;
   font-weight: 400;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 .page__header--compact .nav__list {
   height: 100%;
@@ -528,6 +534,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 12px;
+  line-height: 12px;
   position: absolute;
   left: 0;
   bottom: 0;
