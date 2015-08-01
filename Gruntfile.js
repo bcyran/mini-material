@@ -6,7 +6,8 @@ module.exports = function(grunt) {
         sass: {
             expanded: {
                 options: {
-                    style: 'expanded'
+                    style: 'expanded',
+                    sourcemap: 'none'
                 },
                 files: {
                     'dist/mini-material.css': 'src/mini-material.scss'
@@ -14,7 +15,8 @@ module.exports = function(grunt) {
             },
             compressed: {
                 options: {
-                    style: 'compressed'
+                    style: 'compressed',
+                    sourcemap: 'none'
                 },
                 files: {
                     'dist/mini-material.min.css': 'src/mini-material.scss'
