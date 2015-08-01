@@ -6,6 +6,21 @@
     padding: 0;
     text-align: justify;
 
+    &__image {
+        position: relative;
+        overflow: hidden;
+        height: $card-image-height;
+        border-radius: 2px 2px 0 0;
+
+        &__img {
+            min-height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
     &__title {
         font-weight: 300;
         font-size: 24px;

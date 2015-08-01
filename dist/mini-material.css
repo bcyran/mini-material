@@ -400,6 +400,21 @@ body {
   padding: 0;
   text-align: justify;
 }
+.card__image {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  border-radius: 2px 2px 0 0;
+}
+.card__image__img {
+  min-height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 .card__title {
   font-weight: 300;
   font-size: 24px;
