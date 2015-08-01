@@ -632,7 +632,6 @@ html {
 [data-tooltip]:after {
   content: attr(data-tooltip);
   position: absolute;
-  height: 28px;
   white-space: nowrap;
   background: rgba(97, 97, 97, 0);
   border-radius: 2px;
@@ -655,6 +654,11 @@ html {
 [data-tooltip].tooltip--top:after {
   bottom: 100%;
   left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+[data-tooltip].tooltip--top:hover:after {
   -webkit-transform: translate(-50%, -8px);
       -ms-transform: translate(-50%, -8px);
           transform: translate(-50%, -8px);
@@ -662,6 +666,11 @@ html {
 [data-tooltip].tooltip--right:after {
   bottom: 50%;
   left: 100%;
+  -webkit-transform: translate(0, 50%);
+      -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+[data-tooltip].tooltip--right:hover:after {
   -webkit-transform: translate(8px, 50%);
       -ms-transform: translate(8px, 50%);
           transform: translate(8px, 50%);
@@ -669,6 +678,11 @@ html {
 [data-tooltip].tooltip--bottom:after {
   top: 100%;
   left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+[data-tooltip].tooltip--bottom:hover:after {
   -webkit-transform: translate(-50%, 8px);
       -ms-transform: translate(-50%, 8px);
           transform: translate(-50%, 8px);
@@ -676,6 +690,11 @@ html {
 [data-tooltip].tooltip--left:after {
   bottom: 50%;
   right: 100%;
+  -webkit-transform: translate(0, 50%);
+      -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+[data-tooltip].tooltip--left:hover:after {
   -webkit-transform: translate(-8px, 50%);
       -ms-transform: translate(-8px, 50%);
           transform: translate(-8px, 50%);
