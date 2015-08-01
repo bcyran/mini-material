@@ -368,6 +368,11 @@ body {
   box-shadow: none !important;
   cursor: default;
 }
+.button--large {
+  height: 46.8px;
+  font-size: 18.2px;
+  line-height: 46.8px;
+}
 
 .fab {
   border-radius: 50%;
