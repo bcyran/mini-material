@@ -5,7 +5,7 @@
 
 // Page Content
 .page__content {
-	max-width: 960px;
+	max-width: $page-content-width;
 	margin: 0 auto;
 	padding: $page-content-padding-top 8px 8px 8px;
 }
