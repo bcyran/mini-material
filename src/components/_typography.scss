@@ -64,4 +64,10 @@ html {
     &--underline {
         border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     }
+
+    &--blockquote {
+        margin: 0;
+        padding-left: $blockquote-margin;
+        border-left: 4px solid currentColor;
+    }
 }
