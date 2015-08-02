@@ -70,4 +70,13 @@ html {
         padding-left: $blockquote-margin;
         border-left: 4px solid $blockquote-border-color;
     }
+
+    &--link {
+        text-decoration: none;
+        border-bottom: 1px dotted currentColor;
+
+        &:hover {
+            border-bottom: 1px solid currentColor;
+        }
+    }
 }
