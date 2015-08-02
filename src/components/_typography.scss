@@ -68,6 +68,6 @@ html {
     &--blockquote {
         margin: 0;
         padding-left: $blockquote-margin;
-        border-left: 4px solid currentColor;
+        border-left: 4px solid $blockquote-border-color;
     }
 }

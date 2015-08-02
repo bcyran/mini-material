@@ -486,7 +486,7 @@ html {
 .typography--blockquote {
   margin: 0;
   padding-left: 1em;
-  border-left: 4px solid currentColor;
+  border-left: 4px solid #2196F3;
 }
 
 .text-field {
