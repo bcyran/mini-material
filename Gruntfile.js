@@ -21,6 +21,15 @@ module.exports = function(grunt) {
                 files: {
                     'dist/mini-material.min.css': 'src/mini-material.scss'
                 }
+            },
+            gh: {
+                options: {
+                    style: 'expanded',
+                    sourcemap: 'none'
+                },
+                files: {
+                    'css/style.css': 'src/style.scss'
+                }
             }
         },
 
@@ -52,10 +61,16 @@ module.exports = function(grunt) {
                     spawn: false,
                 }
             },
-
+            gh: {
+                files: ['src/style.scss'],
+                tasks: ['sass:gh'],
+                options: {
+                    spawn: false,
+                }
+            },
             livereload: {
                 options: { livereload: true },
-                files: ['dist/**/*', 'test/**/*'],
+                files: ['*.css', '*.html'],
             },
         }
 

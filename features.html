@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Features \\ Mini Material</title>
+    <meta name="description" content="Mini Material is simple library of Material Design based elements.">
+    <meta name="keywords" content="Mini Material, Material Design, Google Material Design, Material Design library, Material Design framework">
+    <meta name="author" content="Bazyli Cyran">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,300italic,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body class="page">
+    <header class="page__header page__header--large color--custom--blue text--white">
+        <h1 class="page-title color--custom--blue text--white">
+            <a href="/" class="page-title__link">Mini Material</a>
+        </h1>
+        
+        <nav class="nav color--custom--dark-blue text-white">
+            <ul class="nav__list">
+                <li class="nav__list__item"><a class="nav__list__item__link" href="/">About</a></li>
+                <li class="nav__list__item"><a class="nav__list__item__link" href="material-design.html">Material Design</a></li>
+                <li class="nav__list__item"><a class="nav__list__item__link nav__list__item__link--active" href="features.html">Features</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="page__content">
+
+        <h2 class="heading--2">Features</h2>
+
+        <article class="card color--white text--black">
+            <h3 class="card__title" id="header">Header & Nav</h3>
+            <div class="card__content">
+                <p>You can create Page Header just like the one you see above. There is also <em class="typography--emphasis">compact</em> version of it with Page Title and Navigation in one row.</p>
+            </div>
+        </article>
+
+        <article class="card color--white text--black">
+            <h3 class="card__title" id="card">Card</h3>
+            <div class="card__content">
+                <p>This is basic card. It has title and optional action links.</p>
+            </div>
+            <div class="card__actions">
+                <a href="#" class="card__actions__button  text--custom--blue">Action 1</a>
+                <a href="#" class="card__actions__button  text--custom--blue">Action 2</a>
+            </div>
+        </article>
+
+        <article class="card color--white text--black">
+            <div class="card__image">
+                <img src="images/glass.jpg" alt="Pretty image" class="card__image__img">
+            </div>
+            <h3 class="card__title" id="image-card">Image Card</h3>
+            <div class="card__content">
+                <p>Card with image. It can have action links too.</p>
+            </div>
+        </article>
+
+        <article class="card color--white text--black">
+            <h3 class="card__title" id="buttons">Buttons</h3>
+            <div class="card__content">
+                <p>Mini Material comes with following types of buttons:</p>
+                <h4 class="heading--6">Regular</h4>
+                    <button class="button color--blue text--white">Hi there!</button>
+                <h4 class="heading--6">Large</h4>
+                    <button class="button button--large color--blue text--white">Hello sir!</button>
+                <h4 class="heading--6">Flat</h4>
+                    <button class="button button--flat text--black">What's up?</button>
+                <h4 class="heading--6">Fixed Action Button</h4>
+                    <p>It's floating in bottom right corner.</p>
+                    <button class="fab color--pink text--white">FAB</button>
+                <h4 class="heading--6">Disabled</h4>
+                    <p>Every button can be disabled.</p>
+                    <button class="button button--disabled color--blue text--white">Regular disabled</button>
+                    <button class="button button--flat button--disabled text--black">Flat disabled</button>
+            </div>
+        </article>
+
+        <article class="card color--white text--black">
+            <h3 class="card__title" id="typography">Typography</h3>
+            <div class="card__content">
+                <p>You can use six heading classes:</p>
+                <span class="heading--demo heading--1">heading--1</span>
+                <span class="heading--demo heading--2">heading--2</span>
+                <span class="heading--demo heading--3">heading--3</span>
+                <span class="heading--demo heading--4">heading--4</span>
+                <span class="heading--demo heading--5">heading--5</span>
+                <span class="heading--demo heading--6">heading--6</span>
+                <p>There are also: <strong class="typography--strong">strong text</strong>, <em class="typography--emphasis">emphasis</em>, <span class="typography--underline">underline</span> and block quote:</p>
+                <blockquote class="typography--blockquote">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </blockquote>
+            </div>
+        </article>
+
+        <article class="card color--white text--black">
+            <h3 class="card__title" id="forms">Forms</h3>
+            <div class="card__content">
+                <p>Mini Material has classes for creating text fields:</p>
+                <form action="#" id="form">
+                    <div class="text-field" id="form-name">
+                        <input type="text" class="text-field__input" placeholder="John" id="form__first-name">
+                        <label for="form__first-name" class="text-field__label">First Name</label>
+                    </div>
+                    <div class="text-field" id="form-surname">
+                        <input type="text" class="text-field__input" placeholder="Doe" id="form__last-name">
+                        <label for="form__last-name" class="text-field__label">Last Name</label>
+                    </div>
+                    <div class="text-field" id="form-about">
+                        <textarea type="text" class="text-field__input text-field__input--textarea" id="form__about">I'm awesome!</textarea>
+                        <label for="form__about" class="text-field__label">Something about you</label>
+                    </div>
+                </form>
+            </div>
+        </article>
+
+        <article class="card color--white text--black">
+            <h3 class="card__title" id="tolltips">Tooltips</h3>
+            <div class="card__content">
+                <p>There are also tooltips. You can use them in four positions:</p>
+                <ul>
+                    <li><span class="tooltip--top" data-tooltip="I'm at the top!">tooltip--top</span></li>
+                    <li><span class="tooltip--right" data-tooltip="I'm on the right!">tooltip--right</span></li>
+                    <li><span class="tooltip--bottom" data-tooltip="I'm at the bottom!">tooltip--bottom</span></li>
+                    <li><span class="tooltip--left" data-tooltip="I'm on the left!">tooltip--left</span></li>
+                </ul>
+                <p>Tooltips doesn't use any JS, only CSS!</p>
+            </div>
+        </article>
+
+        <article class="card color--white text--black">
+            <h3 class="card__title" id="colors">Colors</h3>
+            <div class="card__content">
+                <p>Color Palette includes 21 colors which are base colors from <a href="https://www.google.com/design/spec/style/color.html#" class="typography--link text--blue">Google Material Design guidelines</a>:
+                <span class="color--red text--white">red</span>, 
+                <span class="color--pink text--white">pink</span>, 
+                <span class="color--purple text--white">purple</span>, 
+                <span class="color--deep-purple text--white tooltip--top" data-tooltip="Oh yeah, Smoke on the Water!">deep purple</span>, 
+                <span class="color--indigo text--white">indigo</span>, 
+                <span class="color--blue text--white">blue</span>, 
+                <span class="color--light-blue text--white">light blue</span>, 
+                <span class="color--cyan text--white">cyan</span>, 
+                <span class="color--teal text--white">teal</span>, 
+                <span class="color--green text--white">green</span>, 
+                <span class="color--light-green text--white">light green</span>, 
+                <span class="color--lime text--white">lime</span>, 
+                <span class="color--yellow text--white">yellow</span>, 
+                <span class="color--amber text--white">amber</span>, 
+                <span class="color--orange text--white">orange</span>, 
+                <span class="color--deep-orange text--white">deep orange</span>, 
+                <span class="color--brown text--white">brown</span>, 
+                <span class="color--grey text--white">grey</span>, 
+                <span class="color--blue-grey text--white">blue grey</span>, 
+                <span class="color--black text--white">black</span> and 
+                <span class="color--white text--black">white</span>.
+            </div>
+        </article>
+
+        <article class="card color--white text--black">
+            <h3 class="card__title" id="media">Media Queries</h3>
+            <div class="card__content">
+                <p>Mini Material has variety of classes for hiding content depending on screen size. This system relies on four screen sizes: s, m, l, xl defined by breakpoints variables. You can use <em class="typography--emphasis">--up</em> and <em class="typography--emphasis">--down</em> modifiers if you want to target more than one size.</p>
+                <p>Resize browser window to see how list of examples is changing according to size:</p>
+                <ul>
+                    <li class="hide--s">hide--s</li>
+                    <li class="hide--m--down">hide--m--down</li>
+                    <li class="hide--m--up">hide--m--up</li>
+                    <li class="hide--l--down">hide--l--down</li>
+                    <li class="hide--l">hide--l</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card color--white text--black">
+            <h3 class="card__title" id="variables">SASS Variables</h3>
+            <div class="card__content">
+                <p>If you are using <a href="http://sass-lang.com/" class="typography--link text--blue">SASS</a> you can adjust many aspects of library using variables. For example: </p>
+                <ul>
+                    <li>transition-duration</li>
+                    <li>button-height</li>
+                    <li>page-content-width</li>
+                    <li>card-image-height</li>
+                    <li>page-font-size</li>
+                    <li>footer-height</li>
+                </ul>
+                <p>And much more!</p>
+            </div>
+        </article>
+
+        <article class="card color--white text--black">
+            <h3 class="card__title" id="footer">Footer</h3>
+            <div class="card__content">
+                <p>There is also footer just like the one beneath this card.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="page__footer color--custom--dark-blue text--white">
+        <div class="page__footer__left">
+            Mini Material by Bazyli Cyran
+        </div>
+        <div class="page__footer__right">
+            <a href="https://github.com/sajran/mini-material" class="text--white">GitHub repo</a>
+        </div>
+    </footer>
+</body>
+</html>

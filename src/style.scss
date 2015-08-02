@@ -1,0 +1,43 @@
+// Variables
+$large-header-title-height: 128px;
+$text-field-accent-color: #2196F3;
+
+// Import Mini Material
+@import 'mini-material';
+
+// Page specific styles
+.color--custom--blue {
+	background-color: #1E88E5;
+}
+
+.text--custom--blue {
+	color: #1E88E5;
+}
+
+.color--custom--dark-blue {
+	background-color: #1565C0;
+}
+
+.heading--demo {
+	display: block;
+}
+
+#form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&-name {
+		flex-basis: 49%;
+	}
+
+	&-surname {
+		flex-basis: 49%;
+	}
+
+	&-about {
+		flex-basis: 100%;
+		margin-top: 20px;
+	}
+
+}
