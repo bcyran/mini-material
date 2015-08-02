@@ -384,6 +384,7 @@ body {
   height: 64px;
   line-height: 64px;
   text-align: center;
+  z-index: 97;
 }
 .fab--disabled {
   background-color: #DFDFDF !important;

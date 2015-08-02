@@ -71,6 +71,7 @@
     height: $fab-radius;
     line-height: $fab-radius;
     text-align: center;
+    z-index: 97;
 
     // Disabled Fixed Action Button
     &--disabled {
