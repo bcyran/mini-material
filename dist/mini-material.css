@@ -728,3 +728,102 @@ html {
       -ms-transform: translate(-8px, 50%);
           transform: translate(-8px, 50%);
 }
+
+.grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.grid__col--1 {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .grid__col--m--1 {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .grid__col--l--1 {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+}
+
+.grid__col--1-2 {
+  -webkit-flex-basis: 49%;
+      -ms-flex-preferred-size: 49%;
+          flex-basis: 49%;
+}
+
+@media only screen and (min-width: 600px) {
+  .grid__col--m--1-2 {
+    -webkit-flex-basis: 49%;
+        -ms-flex-preferred-size: 49%;
+            flex-basis: 49%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .grid__col--l--1-2 {
+    -webkit-flex-basis: 49%;
+        -ms-flex-preferred-size: 49%;
+            flex-basis: 49%;
+  }
+}
+
+.grid__col--1-3 {
+  -webkit-flex-basis: 32.33333%;
+      -ms-flex-preferred-size: 32.33333%;
+          flex-basis: 32.33333%;
+}
+
+@media only screen and (min-width: 600px) {
+  .grid__col--m--1-3 {
+    -webkit-flex-basis: 32.33333%;
+        -ms-flex-preferred-size: 32.33333%;
+            flex-basis: 32.33333%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .grid__col--l--1-3 {
+    -webkit-flex-basis: 32.33333%;
+        -ms-flex-preferred-size: 32.33333%;
+            flex-basis: 32.33333%;
+  }
+}
+
+.grid__col--2-3 {
+  -webkit-flex-basis: 65.66667%;
+      -ms-flex-preferred-size: 65.66667%;
+          flex-basis: 65.66667%;
+}
+
+@media only screen and (min-width: 600px) {
+  .grid__col--m--2-3 {
+    -webkit-flex-basis: 65.66667%;
+        -ms-flex-preferred-size: 65.66667%;
+            flex-basis: 65.66667%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .grid__col--l--2-3 {
+    -webkit-flex-basis: 65.66667%;
+        -ms-flex-preferred-size: 65.66667%;
+            flex-basis: 65.66667%;
+  }
+}

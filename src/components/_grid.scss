@@ -1,0 +1,54 @@
+// Grids
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&__col {
+		&--1 {
+			flex-basis: 100%;
+		}
+
+		&--m--1 {
+			@media only screen and (min-width: $breakpoint-s-m) {
+				flex-basis: 100%;
+			}
+		}
+
+		&--l--1 {
+			@media only screen and (min-width: $breakpoint-m-l) {
+				flex-basis: 100%;
+			}
+		}
+	}
+}
+
+// Generating column classes
+$i: 2;
+@while $i <= $cols-number {
+	$j: 1;
+
+	@while $j <= $i {
+		@if $j != $i {
+			.grid__col--#{$j}-#{$i} {
+				flex-basis: 100% * ($j / $i) - $col-margin;
+			}
+
+			.grid__col--m--#{$j}-#{$i} {
+				@media only screen and (min-width: $breakpoint-s-m) {
+					flex-basis: 100% * ($j / $i) - $col-margin;
+				}
+			}
+
+			.grid__col--l--#{$j}-#{$i} {
+				@media only screen and (min-width: $breakpoint-m-l) {
+					flex-basis: 100% * ($j / $i) - $col-margin;
+				}
+			}
+		}
+
+		$j: $j + 1;
+	}
+
+	$i: $i + 1;
+}
