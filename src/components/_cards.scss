@@ -26,6 +26,7 @@
         font-size: 24px;
         margin: 0;
         padding: $card-padding $card-padding 0 $card-padding;
+        text-align: left;
     }
 
     &__content {
@@ -35,6 +36,7 @@
     &__actions {
         padding: ($card-padding / 4) $card-padding ($card-padding / 4) ($card-padding - $button-sides-padding);
         border-top: 1px solid rgba(0, 0, 0, 0.1);
+        text-align: left;
 
         &__button {
             @extend .button;
