@@ -75,7 +75,7 @@ html {
         text-decoration: none;
         border-bottom: 1px dotted currentColor;
 
-        &:hover {
+        &:hover, &:focus {
             border-bottom: 1px solid currentColor;
         }
     }

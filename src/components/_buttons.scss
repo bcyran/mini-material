@@ -15,7 +15,7 @@
     cursor: pointer;
     transition: all $transition_duration ease-in;
 
-    &:hover {
+    &:hover, &:focus {
         opacity: 0.9;
     }
     
@@ -28,7 +28,7 @@
     &--flat {
         box-shadow: none !important;
 
-        &:hover {
+        &:hover, &:focus {
             background-color: rgba(0, 0, 0, 0.1);
         }
 

@@ -240,7 +240,7 @@ body {
   opacity: 1;
   border-bottom: 3px solid #fff;
 }
-.page__header--large .nav__list__item__link:hover {
+.page__header--large .nav__list__item__link:hover, .page__header--large .nav__list__item__link:focus {
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -311,7 +311,7 @@ body {
   opacity: 1;
   border-bottom: 3px solid #fff;
 }
-.page__header--compact .nav__list__item__link:hover {
+.page__header--compact .nav__list__item__link:hover, .page__header--compact .nav__list__item__link:focus {
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -343,7 +343,7 @@ body {
   -webkit-transition: all 150ms ease-in;
           transition: all 150ms ease-in;
 }
-.button:hover, .fab:hover, .card__actions__button:hover {
+.button:hover, .fab:hover, .card__actions__button:hover, .button:focus, .fab:focus, .card__actions__button:focus {
   opacity: 0.9;
 }
 .button:active, .fab:active, .card__actions__button:active {
@@ -353,7 +353,7 @@ body {
 .button--flat, .card__actions__button {
   box-shadow: none !important;
 }
-.button--flat:hover, .card__actions__button:hover {
+.button--flat:hover, .card__actions__button:hover, .button--flat:focus, .card__actions__button:focus {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .button--flat:active, .card__actions__button:active {
@@ -494,7 +494,7 @@ html {
   text-decoration: none;
   border-bottom: 1px dotted currentColor;
 }
-.typography--link:hover {
+.typography--link:hover, .typography--link:focus {
   border-bottom: 1px solid currentColor;
 }
 

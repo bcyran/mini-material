@@ -1,6 +1,6 @@
 {
   "name": "mini-material",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "devDependencies": {
     "grunt": "*",
     "grunt-autoprefixer": "^3.0.3",
