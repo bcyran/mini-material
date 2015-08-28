@@ -203,7 +203,7 @@ body {
 }
 .page__header--large .nav {
   height: 64px;
-  width: calc(100% + $menu-item-sides-padding);
+  width: calc(100% + 16px);
   margin-left: -16px;
   font-weight: 400;
   overflow-y: hidden;
