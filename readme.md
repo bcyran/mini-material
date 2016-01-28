@@ -5,9 +5,6 @@ Mini Material is a simple library of Material Design based elements. It uses onl
 
 The main concept while creating MM was to interfere with your HTML code structure and semantics as little as possible. Mini material influences only the look of your site and doesn't force you to create giant non semantic stuctures.
 
-## Demo
-You can see demo [here](http://sajran.github.io/mini-material/).
-
 ## Usage
 For documentation visit [wiki](https://github.com/sajran/mini-material/wiki).
 
