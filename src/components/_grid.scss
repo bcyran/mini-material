@@ -6,22 +6,29 @@
 
 	&__col {
 		&--1 {
-			flex-basis: 100%;
+			width: 100%;
 		}
 
 		&--m--1 {
 			@media only screen and (min-width: $breakpoint-s-m) {
-				flex-basis: 100%;
+				width: 100%;
 			}
 		}
 
 		&--l--1 {
 			@media only screen and (min-width: $breakpoint-m-l) {
-				flex-basis: 100%;
+				width: 100%;
 			}
 		}
 	}
 }
+
+[class^="grid__col--"],
+[class*=" grid__col--"] {
+	flex: 0 0;
+	flex-basis: auto;
+}
+
 
 // Generating column classes
 $i: 2;
@@ -31,18 +38,24 @@ $i: 2;
 	@while $j <= $i {
 		@if $j != $i {
 			.grid__col--#{$j}-#{$i} {
-				flex-basis: 100% * ($j / $i) - $col-margin;
+				$width: 100% * ($j / $i) - $col-margin;
+
+				width: $width;
 			}
 
 			.grid__col--m--#{$j}-#{$i} {
 				@media only screen and (min-width: $breakpoint-s-m) {
-					flex-basis: 100% * ($j / $i) - $col-margin;
+					$width: 100% * ($j / $i) - $col-margin;
+
+					width: $width;
 				}
 			}
 
 			.grid__col--l--#{$j}-#{$i} {
 				@media only screen and (min-width: $breakpoint-m-l) {
-					flex-basis: 100% * ($j / $i) - $col-margin;
+					$width: 100% * ($j / $i) - $col-margin;
+
+					width: $width;
 				}
 			}
 		}
