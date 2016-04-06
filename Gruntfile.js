@@ -82,7 +82,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
 
-    grunt.registerTask('dist', ['sass:compressed', 'autoprefixer', 'csso:compressed']);
+    grunt.registerTask('dist', ['sass:expanded', 'sass:compressed', 'autoprefixer', 'csso:compressed']);
     grunt.registerTask('dev', ['watch']);
 
 };
