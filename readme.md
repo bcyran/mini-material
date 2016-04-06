@@ -14,12 +14,13 @@ Table of contents:
 4. [Cards](#cards)
 5. [Buttons](#buttons)
 6. [Grid](#grid)
-7. [Forms](#forms)
-8. [Text Styles](#text-styles)
-9. [Headings](#headings)
-10. [Colors](#colors)
-11. [Media Queries](#media-queries)
-12. [SASS VAriables](#sass-variables)
+7. [Tables](#tables)
+8. [Forms](#forms)
+9. [Text Styles](#text-styles)
+10. [Headings](#headings)
+11. [Colors](#colors)
+12. [Media Queries](#media-queries)
+13. [SASS VAriables](#sass-variables)
 
 ### Layout
 Classes:
@@ -158,6 +159,40 @@ Example:
 </div>
 ```
 Width of the column is expressed as fraction separated by dash. There is no *2-2* or *3-3* classes, use 1 instead. By default grid has three columns.
+
+### Tables
+Classes:
+* `table`
+  * `table__head`
+  * `table__body`
+  * `table__row`
+    * `table__row--head`
+    * `table__cell`
+      * `table__cell--head`
+      * `table__cell--non-numeric`
+
+Example:
+```html
+<table class="table">
+    <thead class="table__head">
+        <tr class="table__row--head">
+            <th class="table__cell table__cell--head table__cell--non-numeric">Header 1</th>
+            <th class="table__cell table__cell--head">Header 2</th>
+        </tr>
+    </thead>
+    <tbody class="table__body">
+        <tr class="table__row">
+            <td class="table__cell table__cell--non-numeric">Something</td>
+            <td class="table__cell">100</td>
+        </tr>
+        <tr class="table__row">
+            <td class="table__cell table__cell--non-numeric">Anything</td>
+            <td class="table__cell">200</td>
+        </tr>
+    </tbody>
+</table>
+```
+All cells are treated as numeric (text aligned to right) unless they have `table__cell--non-numeric` class.
 
 ### Forms
 Classes:

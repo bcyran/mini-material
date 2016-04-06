@@ -58,13 +58,6 @@ module.exports = function(grunt) {
                 files: ['src/**/*.scss'],
                 tasks: ['sass:expanded'],
                 options: {
-                    spawn: false,
-                }
-            },
-            gh: {
-                files: ['src/style.scss'],
-                tasks: ['sass:gh'],
-                options: {
                     spawn: true,
                 }
             },

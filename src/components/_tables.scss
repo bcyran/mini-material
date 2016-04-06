@@ -1,0 +1,39 @@
+// Tables
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 2px;
+
+    &__head, &__body {
+        width: 100%;
+    }
+
+    &__row {
+        width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+        &--head {
+            @extend .heading--6;
+        }
+    }
+
+    &__cell {
+        padding: 12px 18px;
+        text-align: right;
+
+        &--non-numeric {
+            text-align: left;
+        }
+
+        &--head {
+            @extend .heading--6;
+            padding: 12px 18px;
+            text-align: right;
+
+            &.table__cell--non-numeric {
+                text-align: left !important;
+            }
+        }
+    }
+}
