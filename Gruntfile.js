@@ -65,7 +65,7 @@ module.exports = function(grunt) {
                 files: ['src/style.scss'],
                 tasks: ['sass:gh'],
                 options: {
-                    spawn: false,
+                    spawn: true,
                 }
             },
             livereload: {
@@ -82,7 +82,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
 
-    grunt.registerTask('dist', ['sass:expanded', 'sass:compressed', 'autoprefixer', 'csso:compressed']);
+    grunt.registerTask('dist', ['sass:compressed', 'autoprefixer', 'csso:compressed']);
     grunt.registerTask('dev', ['watch']);
 
 };
