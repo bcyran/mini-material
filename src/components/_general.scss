@@ -5,10 +5,12 @@ html {
 }
 
 body {
-    margin: 0 0 $footer-height 0;
+    margin: 0 0 $footer-height;
     padding: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }

@@ -17,13 +17,13 @@
         font-weight: 400;
         text-transform: none;
         visibility: hidden;
-        transition: all $transition_duration ease-in;
+        transition: all $transition-duration ease-in;
         pointer-events: none;
     }
 
     &:hover:after {
         visibility: visible;
-        background: rgba(97, 97, 97, 0.9);
+        background: rgba(97, 97, 97, .9);
     }
 
     // Top
@@ -40,7 +40,7 @@
     }
 
     // Right
-    &.tooltip--right{
+    &.tooltip--right {
         &:after {
             bottom: 50%;
             left: 100%;

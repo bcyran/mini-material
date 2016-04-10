@@ -1,145 +1,145 @@
 // Page Header
 .header {
     overflow: hidden;
+}
 
-    // Large Header
-    &--large {
-        height: $large-header-height;
-        width: 100%;
+// Large Header
+.header--large {
+    height: $large-header-height;
+    width: 100%;
 
-        // Page Title
-        .header__title {
-            height: $large-header-title-height;
+    // Page Title
+    .header__title {
+        height: $large-header-title-height;
+        width: $header-content-width;
+        margin: 0 auto;
+        padding: 0 $header-sides-padding;
+        line-height: $large-header-title-line-height;
+        font-weight: 400;
+    }
+
+    .header__link {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    // Menu
+    .nav {
+        height: $large-header-nav-height;
+        width: calc(100% + #{$menu-item-sides-padding});
+        margin-left: -$menu-item-sides-padding;
+        font-weight: 400;
+        overflow-y: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        &__list {
+            height: $large-header-nav-height;
             width: $header-content-width;
+            list-style: none;
             margin: 0 auto;
             padding: 0 $header-sides-padding;
-            line-height: $large-header-title-line-height;
-            font-weight: 400;
         }
 
-        .header__link {
+        &__item {
+            display: inline-block;
+            height: 100%;
+            width: auto;
+            margin: 0;
+            padding: 0;
+            line-height: $large-header-nav-height;
+        }
+
+        &__link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0 $menu-item-sides-padding;
             color: inherit;
             text-decoration: none;
-        }
+            opacity: .85;
+            transition: all $transition-duration ease-in;
 
-        // Menu
-        .nav {
-            height: $large-header-nav-height;
-            width: calc(100% + #{$menu-item-sides-padding});
-            margin-left: -$menu-item-sides-padding;
-            font-weight: 400;
-            overflow-y: hidden;
-            overflow-x: auto;
-            white-space: nowrap;
-
-            &__list {
-                height: $large-header-nav-height;
-                width: $header-content-width;
-                list-style: none;
-                margin: 0 auto;
-                padding: 0 $header-sides-padding;
+            @include hover {
+                opacity: 1;
+                background-color: rgba(255, 255, 255, .2);
             }
 
-            &__item {
-                display: inline-block;
-                height: 100%;
-                width: auto;
-                margin: 0;
-                padding: 0;
-                line-height: $large-header-nav-height;
-            }
-
-            &__link {
-                display: block;
-                width: 100%;
-                height: 100%;
-                padding: 0 $menu-item-sides-padding;
-                color: inherit;
-                text-decoration: none;
-                opacity: 0.85;
-                transition: all $transition_duration ease-in;
-
-                @include hover {
-                    opacity: 1;
-                    background-color: rgba(255, 255, 255, 0.2);
-                }
-
-                &--active {
-                    opacity: 1;
-                    border-bottom: 3px solid #fff;
-                }
+            &--active {
+                opacity: 1;
+                border-bottom: 3px solid #fff;
             }
         }
     }
-    
-    // Compact Header
-    &--compact {
-        display: flex;
-        justify-content: center;
-        height: $compact-header-height;
-        width: 100%;
+}
 
-        // Page Title
-        .header__title {
+// Compact Header
+.header--compact {
+    display: flex;
+    justify-content: center;
+    height: $compact-header-height;
+    width: 100%;
+
+    // Page Title
+    .header__title {
+        height: 100%;
+        flex-basis: ($header-content-width * 1/3);
+        margin: 0;
+        padding: 0 0 0 $menu-item-sides-padding;
+        line-height: $compact-header-height;
+        font-weight: 400;
+    }
+
+    .header__link {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    // Menu
+    .nav {
+        height: $compact-header-height;
+        flex-basis: ($header-content-width * 2/3);
+        font-weight: 400;
+        overflow-y: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        &__list {
             height: 100%;
-            flex-basis: ($header-content-width * 1/3);
+            width: 100%;
+            list-style: none;
             margin: 0;
-            padding: 0 0 0 $menu-item-sides-padding;
-            line-height: $compact-header-height;
-            font-weight: 400;
+            padding: 0 ($header-sides-padding - $menu-item-sides-padding) 0 0;
+            text-align: right;
         }
 
-        .header__link {
+        &__item {
+            display: inline-block;
+            height: 100%;
+            width: auto;
+            margin: 0;
+            padding: 0;
+            line-height: $compact-header-height;
+        }
+
+        &__link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0 $menu-item-sides-padding;
             color: inherit;
             text-decoration: none;
-        }
+            opacity: .85;
+            transition: all $transition-duration ease-in;
 
-        // Menu
-        .nav {
-            height: $compact-header-height;
-            flex-basis: ($header-content-width * 2/3);
-            font-weight: 400;
-            overflow-y: hidden;
-            overflow-x: auto;
-            white-space: nowrap;
-
-            &__list {
-                height: 100%;
-                width: 100%;
-                list-style: none;
-                margin: 0;
-                padding: 0 ($header-sides-padding - $menu-item-sides-padding) 0 0;
-                text-align: right;
+            @include hover {
+                opacity: 1;
+                background-color: rgba(255, 255, 255, .2);
             }
 
-            &__item {
-                display: inline-block;
-                height: 100%;
-                width: auto;
-                margin: 0;
-                padding: 0;
-                line-height: $compact-header-height;
-            }
-
-            &__link {
-                display: block;
-                width: 100%;
-                height: 100%;
-                padding: 0 $menu-item-sides-padding;
-                color: inherit;
-                text-decoration: none;
-                opacity: 0.85;
-                transition: all $transition_duration ease-in;
-
-                @include hover {
-                    opacity: 1;
-                    background-color: rgba(255, 255, 255, 0.2);
-                }
-
-                &--active {
-                    opacity: 1;
-                    border-bottom: 3px solid #fff;
-                }
+            &--active {
+                opacity: 1;
+                border-bottom: 3px solid #fff;
             }
         }
     }

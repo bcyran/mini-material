@@ -1,3 +1,5 @@
+scss_files: 'src/**/*.scss'
+
 linters:
     Indentation:
         character: space
@@ -13,4 +15,13 @@ linters:
         convention: hyphenated_BEM
 
     ImportantRule:
+        enabled: false
+
+    PropertySortOrder:
+        enabled: false
+
+    NestingDepth:
+        max_depth: 4
+
+    ColorVariable:
         enabled: false

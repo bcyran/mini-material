@@ -11,7 +11,7 @@ $screens: (
     $name: nth($screen, 1);
     $from: nth($screen, 2);
     $to: nth($screen, 3);
-    
+
     .hide {
         @if $to != none {
             &--#{$name}--down {

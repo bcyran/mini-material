@@ -3,9 +3,9 @@
     display: inline-block;
     height: $button-height;
     padding: 0 $button-sides-padding;
-    border: none;
+    border: 0;
     border-radius: 2px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
     text-decoration: none;
     text-transform: uppercase;
     font-size: $button-font-size;
@@ -13,27 +13,27 @@
     line-height: $button-height;
     vertical-align: middle;
     cursor: pointer;
-    transition: all $transition_duration ease-in;
+    transition: all $transition-duration ease-in;
 
     @include hover {
-        opacity: 0.9;
+        opacity: .9;
     }
-    
+
     &:active {
-        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-        opacity: 0.8;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+        opacity: .8;
     }
-    
+
     // Flat Button
     &--flat {
         box-shadow: none !important;
 
         @include hover {
-            background-color: rgba(0, 0, 0, 0.1);
+            background-color: rgba(0, 0, 0, .1);
         }
 
         &:active {
-            background-color: rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, .2);
         }
 
         // Flat Disabled Button
@@ -41,7 +41,7 @@
             background-color: rgba(0, 0, 0, 0) !important;
         }
     }
-    
+
     // Disabled Button
     &--disabled {
         background-color: $button-disabled-background !important;
