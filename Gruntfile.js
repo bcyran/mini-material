@@ -7,7 +7,7 @@ module.exports = function(grunt) {
             expanded: {
                 options: {
                     style: 'expanded',
-                    sourcemap: 'none'
+                    sourcemap: 'auto'
                 },
                 files: {
                     'dist/mini-material.css': 'src/mini-material.scss'
@@ -16,25 +16,19 @@ module.exports = function(grunt) {
             compressed: {
                 options: {
                     style: 'compressed',
-                    sourcemap: 'none'
+                    sourcemap: 'auto'
                 },
                 files: {
                     'dist/mini-material.min.css': 'src/mini-material.scss'
                 }
             },
-            gh: {
-                options: {
-                    style: 'expanded',
-                    sourcemap: 'none'
-                },
-                files: {
-                    'css/style.css': 'src/style.scss'
-                }
-            }
         },
 
         autoprefixer: {
             dist: {
+                options: {
+                    map: true
+                },
                 files:{
                     'dist/mini-material.css': 'dist/mini-material.css',
                     'dist/mini-material.min.css': 'dist/mini-material.min.css'
@@ -42,21 +36,20 @@ module.exports = function(grunt) {
             }
         },
 
-        csso: {
-            compressed: {
-                options: {
-                    report: 'min',
-                },
-                files:{
-                    'dist/mini-material.min.css': 'dist/mini-material.min.css'
-                }
-            }
+        scsslint: {
+            dev: [
+                'src/**/*.scss',
+            ],
+            options: {
+                config: '.scss-lint.yml',
+                colorizeOutput: true
+            },
         },
 
         watch: {
             css: {
                 files: ['src/**/*.scss'],
-                tasks: ['sass:expanded'],
+                tasks: ['sass:compressed'],
                 options: {
                     spawn: true,
                 }
@@ -71,11 +64,12 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-csso');
+    grunt.loadNpmTasks('grunt-scss-lint');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
 
-    grunt.registerTask('dist', ['sass:expanded', 'sass:compressed', 'autoprefixer', 'csso:compressed']);
+    grunt.registerTask('dist', ['sass', 'autoprefixer']);
+    grunt.registerTask('lint', ['scsslint']);
     grunt.registerTask('dev', ['watch']);
 
 };

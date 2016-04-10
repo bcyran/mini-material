@@ -1,0 +1,16 @@
+linters:
+    Indentation:
+        character: space
+        width: 4
+
+    Comment:
+        enabled: false
+
+    PlaceholderInExtend:
+        enabled: false
+
+    SelectorFormat:
+        convention: hyphenated_BEM
+
+    ImportantRule:
+        enabled: false
