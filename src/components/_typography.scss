@@ -1,6 +1,6 @@
 // Global Font Style
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-stack;
     font-weight: 300;
     font-size: $page-font-size;
     line-height: 1.4em;
