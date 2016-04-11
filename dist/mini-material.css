@@ -355,7 +355,8 @@ body {
   opacity: .8;
 }
 .button--flat, .card__button {
-  box-shadow: none !important;
+  box-shadow: none;
+  background-color: transparent;
 }
 .button--flat:hover, .card__button:hover, .button--flat:focus, .card__button:focus {
   background-color: rgba(0, 0, 0, 0.1);
@@ -364,14 +365,21 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .button--flat.button--disabled, .button--disabled.card__button {
-  background-color: transparent !important;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.26);
 }
 .button--disabled {
-  background-color: #dfdfdf !important;
+  background-color: #dfdfdf;
   color: #9f9f9f;
-  opacity: 1 !important;
-  box-shadow: none !important;
+  opacity: 1;
+  box-shadow: none;
   cursor: default;
+}
+.button--disabled:hover, .button--disabled:focus {
+  opacity: 1;
+}
+.button--disabled:active {
+  box-shadow: none;
 }
 .button--large {
   height: 46.8px;
@@ -391,11 +399,17 @@ body {
   z-index: 97;
 }
 .fab--disabled {
-  background-color: #dfdfdf !important;
+  background-color: #dfdfdf;
   color: #9f9f9f;
-  opacity: 1 !important;
-  box-shadow: none !important;
+  opacity: 1;
+  box-shadow: none;
   cursor: default;
+}
+.fab--disabled:hover, .fab--disabled:focus {
+  opacity: 1;
+}
+.fab--disabled:active {
+  box-shadow: none;
 }
 
 .card {
@@ -437,7 +451,7 @@ body {
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.4em;

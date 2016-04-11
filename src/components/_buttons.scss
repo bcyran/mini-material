@@ -26,7 +26,8 @@
 
     // Flat Button
     &--flat {
-        box-shadow: none !important;
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0);
 
         @include hover {
             background-color: rgba(0, 0, 0, .1);
@@ -38,17 +39,26 @@
 
         // Flat Disabled Button
         &.button--disabled {
-            background-color: rgba(0, 0, 0, 0) !important;
+            background-color: rgba(0, 0, 0, 0);
+            color: rgba(0, 0, 0, .26);
         }
     }
 
     // Disabled Button
     &--disabled {
-        background-color: $button-disabled-background !important;
+        background-color: $button-disabled-background;
         color: $button-disabled-color;
-        opacity: 1 !important;
-        box-shadow: none !important;
+        opacity: 1;
+        box-shadow: none;
         cursor: default;
+
+        @include hover {
+            opacity: 1;
+        }
+
+        &:active {
+            box-shadow: none;
+        }
     }
 
     // Large Button
@@ -75,10 +85,18 @@
 
     // Disabled Fixed Action Button
     &--disabled {
-        background-color: $button-disabled-background !important;
+        background-color: $button-disabled-background;
         color: $button-disabled-color;
-        opacity: 1 !important;
-        box-shadow: none !important;
+        opacity: 1;
+        box-shadow: none;
         cursor: default;
+
+        @include hover {
+            opacity: 1;
+        }
+
+        &:active {
+            box-shadow: none;
+        }
     }
 }
