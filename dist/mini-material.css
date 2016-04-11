@@ -413,6 +413,7 @@ body {
 }
 
 .card {
+  position: relative;
   border-radius: 2px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   margin: 0 0 48px;
@@ -424,6 +425,43 @@ body {
   overflow: hidden;
   height: 250px;
   border-radius: 2px 2px 0 0;
+}
+.card__image--left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33%;
+  height: 100%;
+  border-radius: 2px 0 0 2px;
+}
+.card__image--left ~ h3,
+.card__image--left ~ div {
+  padding-left: calc(33% + 32px);
+}
+.card__image--right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 33%;
+  height: 100%;
+  border-radius: 0 2px 2px 0;
+}
+.card__image--right ~ h3,
+.card__image--right ~ div {
+  padding-right: calc(33% + 32px);
+}
+@media (max-width: 600px) {
+  .card__image--left.card__image--responsive, .card__image--right.card__image--responsive {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 2px 2px 0 0;
+    width: auto;
+  }
+  .card__image--responsive ~ h3, .card__image--responsive ~ div {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 .card__img {
   min-height: 100%;

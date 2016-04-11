@@ -88,6 +88,9 @@ Example:
 Classes:
 * `card`
   * `card__image`
+    * `card__image--left`
+    * `card__image--right`
+    * `card__image--responsive`
     * `card__img`
   * `card__title`
   * `card__content`
@@ -114,6 +117,8 @@ Example:
 </article>
 ```
 `card__image` and `card__actions` are optional.
+
+`card__image--responsive` can be used only with`card__image--left` or`card__image--right` and means that on screen smaller than specified breakpoint image will be displayed on top and not on the side of card.
 
 ### Buttons
 Classes:

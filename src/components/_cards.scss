@@ -1,16 +1,68 @@
 // Card
 .card {
+    position: relative;
     border-radius: 2px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
     margin: 0 0 $card-margin-bottom;
     padding: 0;
     text-align: justify;
 
+    // Image on top of the card
     &__image {
         position: relative;
         overflow: hidden;
         height: $card-image-height;
         border-radius: 2px 2px 0 0;
+
+        // Image on the left side
+        &--left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $card-image-width;
+            height: 100%;
+            border-radius: 2px 0 0 2px;
+
+            ~ h3,
+            ~ div {
+                padding-left: calc(#{$card-image-width} + #{$card-padding});
+            }
+        }
+
+        // Image on the right side
+        &--right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: $card-image-width;
+            height: 100%;
+            border-radius: 0 2px 2px 0;
+
+            ~ h3,
+            ~ div {
+                padding-right: calc(#{$card-image-width} + #{$card-padding});
+            }
+        }
+
+        // Responsive image
+        // On top when viewport width is smaller than breakpoint
+        // On the side when viewport width is larger than breakpoint
+        @media (max-width: $card-image-breakpoint) {
+            &--left#{&}--responsive,
+            &--right#{&}--responsive {
+                position: relative;
+                overflow: hidden;
+                height: $card-image-height;
+                border-radius: 2px 2px 0 0;
+                width: auto;
+            }
+
+            &--responsive ~ h3,
+            &--responsive ~ div {
+                padding-left: $card-padding;
+                padding-right: $card-padding;
+            }
+        }
     }
 
     &__img {

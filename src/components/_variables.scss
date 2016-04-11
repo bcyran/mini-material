@@ -1,6 +1,11 @@
 // Global
 $transition-duration: 150ms !default;
 
+// Media Queries (these variables affect 'hide' classes and grid)
+$breakpoint-s-m: 600px !default;
+$breakpoint-m-l: 900px !default;
+$breakpoint-l-xl: 1200px !default;
+
 // Buttons
 $button-height: 36px !default;
 $button-sides-padding: 16px !default;
@@ -31,7 +36,9 @@ $page-content-padding-top: 48px !default;
 // Cards
 $card-padding: 32px !default;
 $card-margin-bottom: 48px !default;
-$card-image-height: 250px !default;
+$card-image-height: 250px !default; // does not affect .card__image--side
+$card-image-width: 33% !default; // only afects .card__image--side
+$card-image-breakpoint: $breakpoint-s-m; // affects .card__image--responsive
 
 // Typography
 $font-stack: 'Roboto', sans-serif !default;
@@ -52,11 +59,6 @@ $footer-height: 64px !default;
 $footer-content-width: 100% !default;
 $footer-sides-padding: 32px !default;
 $footer-font-size: 12px !default;
-
-// Media Queries (these variables affect 'hide' classes and grid)
-$breakpoint-s-m: 600px !default;
-$breakpoint-m-l: 900px !default;
-$breakpoint-l-xl: 1200px !default;
 
 // Tooltips
 $tooltip-font-size: 12px !default;
