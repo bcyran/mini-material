@@ -573,10 +573,10 @@ html {
           transition: border-bottom 150ms ease-in;
 }
 .text-field__input:focus {
-  border-bottom: 1px solid #4caf50;
+  border-bottom: 1px solid #2196f3;
 }
 .text-field__input:focus + label {
-  color: #4caf50;
+  color: #2196f3;
 }
 .text-field__input--textarea {
   font-family: inherit;

@@ -1,5 +1,6 @@
 // Global
 $transition-duration: 150ms !default;
+$primary-color: #2196f3 !default;
 
 // Media Queries (these variables affect 'hide' classes and grid)
 $breakpoint-s-m: 600px !default;
@@ -44,7 +45,7 @@ $card-image-breakpoint: $breakpoint-s-m; // affects .card__image--responsive
 $font-stack: 'Roboto', sans-serif !default;
 $page-font-size: 16px !default;
 $blockquote-margin: 1em !default;
-$blockquote-border-color: #2196f3 !default;
+$blockquote-border-color: $primary-color !default;
 
 // Forms
 $text-field-height: 36px !default;
@@ -52,7 +53,7 @@ $text-field-font-weight: 400 !default;
 $text-field-placeholder-color: rgba(0, 0, 0, .2) !default;
 $text-field-unfocused-color: rgba(0, 0, 0, .5) !default;
 $text-field-color: #757575 !default;
-$text-field-accent-color: #4caf50 !default;
+$text-field-accent-color: $primary-color !default;
 
 // Footer
 $footer-height: 64px !default;
