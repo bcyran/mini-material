@@ -469,7 +469,6 @@ body {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 .card__title {
@@ -742,48 +741,40 @@ html {
   bottom: 100%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
 [data-tooltip].tooltip--top:hover:after {
   -webkit-transform: translate(-50%, -8px);
-      -ms-transform: translate(-50%, -8px);
           transform: translate(-50%, -8px);
 }
 [data-tooltip].tooltip--right:after {
   bottom: 50%;
   left: 100%;
   -webkit-transform: translate(0, 50%);
-      -ms-transform: translate(0, 50%);
           transform: translate(0, 50%);
 }
 [data-tooltip].tooltip--right:hover:after {
   -webkit-transform: translate(8px, 50%);
-      -ms-transform: translate(8px, 50%);
           transform: translate(8px, 50%);
 }
 [data-tooltip].tooltip--bottom:after {
   top: 100%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
 [data-tooltip].tooltip--bottom:hover:after {
   -webkit-transform: translate(-50%, 8px);
-      -ms-transform: translate(-50%, 8px);
           transform: translate(-50%, 8px);
 }
 [data-tooltip].tooltip--left:after {
   bottom: 50%;
   right: 100%;
   -webkit-transform: translate(0, 50%);
-      -ms-transform: translate(0, 50%);
           transform: translate(0, 50%);
 }
 [data-tooltip].tooltip--left:hover:after {
   -webkit-transform: translate(-8px, 50%);
-      -ms-transform: translate(-8px, 50%);
           transform: translate(-8px, 50%);
 }
 
@@ -884,7 +875,6 @@ html {
 .table__row {
   width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .table__cell {
   padding: 12px 18px;
