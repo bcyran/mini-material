@@ -288,13 +288,19 @@ Classes:
 * `color--color-name` (background color)
 * `text--color-name` (text color)
 
-Available colors: red, pink, purple, deep-purple, indigo, blue, light-blue, cyan, teal, green, light-green, lime, yellow, amber, orange, deep-orange, brown, grey, blue-grey, black, white.
+All colors from [Google Material Design color palette](https://www.google.com/design/spec/style/color.html#color-color-palette) are available.
+
+Color names are created in the following pattern: `color-shade`. Google's Red 900 is `red-900` so if you want to set background color to it you should use `.color--red-900`.
 
 Example:
 ```html
 <span class="color--red text--white">white on red</span>
 
 <span class="color--white text--black">black on white</span>
+
+<span class="color--orange-600 text--white">white on orange 600</span>
+
+<span class="color--white text--blue-a700">blue accent 700 on white</span>
 ```
 You can use this classes on basically every element.
 
