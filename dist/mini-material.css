@@ -2520,7 +2520,7 @@ html {
 }
 .checkbox__label {
   display: block;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 24px;
   cursor: pointer;
 }
 .checkbox__label:before {
