@@ -208,20 +208,43 @@ Classes:
   * `text-field__input`
     * `text-field__input--textarea`
   * `text-field__label`
+* `checkbox`
+  * `checkbox__input`
+  * `checkbox__label`
+* `radio`
+  * `radio__input`
+  * `radio__label`
+* `switch`
+  * `switch__input`
+  * `switch__label`
 
 Example:
 ```html
+<!-- text input -->
 <div class="text-field">
     <input type="text" class="text-field__input" placeholder="John Doe" id="name">
     <label for="name" class="text-field__label">Last Name</label>
 </div>
 
+<!-- textarea -->
 <div class="text-field">
     <textarea type="text" class="text-field__input text-field__input--textarea" id="about">I'm awesome!</textarea>
     <label for="about" class="text-field__label">Something about you</label>
 </div>
+
+<!-- switch (checkbox) -->
+<div class="switch">
+    <input type="checkbox" id="switch1" class="switch__input" checked>
+    <label for="switch1" class="switch__label">Switch 1</label>
+</div>
+
+<!-- radio button -->
+<div class="radio">
+    <input type="radio" name="radio" id="radio1" class="radio__input" checked>
+    <label for="radio1" class="radio__label">Radio 1</label>
+</div>
 ```
-Currently Mini Material supports only text fields. Of course you can also use buttons.
+Both `.checkbox` and `.switch` classes are intended for checkboxes.
 
 ### Tooltips
 Classes:
