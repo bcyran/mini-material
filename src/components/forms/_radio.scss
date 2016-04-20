@@ -1,0 +1,71 @@
+// Radio buttons
+.radio {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 10px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &__input {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 36px;
+        height: 20px;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    // Unchecked
+    &__label {
+        display: block;
+        padding: 0 0 0 24px;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            background-color: transparent;
+            border: 2px solid rgba(0, 0, 0 , .54);
+            border-radius: 14px;
+            z-index: 1;
+            transition: border-color .28s cubic-bezier(.4, 0, .2, 1);
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 4px;
+            width: 8px;
+            height: 8px;
+            background-color: $primary-color;
+            border-radius: 50%;
+            z-index: 2;
+            transform: scale(0, 0);
+            transition: transform .28s cubic-bezier(.4, 0, .2, 1);
+        }
+    }
+
+    // Checked
+    &__input:checked + &__label {
+        &:before {
+            border-color: $primary-color;
+        }
+
+        &:after {
+            transform: scale(1, 1);
+        }
+    }
+
+    // Focus
+    &__input:focus + &__label {
+        &:before {
+            outline: 1px dotted currentColor;
+        }
+    }
+}
