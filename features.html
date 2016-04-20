@@ -14,12 +14,12 @@
 </head>
 
 <body class="page">
-    <header class="header header--large color--blue-700 text--white">
+    <header class="header header--large color--indigo text--white">
         <h1 class="header__title">
             <a href="index.html" class="header__link">Mini Material</a>
         </h1>
         
-        <nav class="nav color--blue text-white">
+        <nav class="nav color--indigo-600 text-white">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="index.html">About</a></li>
                 <li class="nav__item"><a class="nav__link nav__link--active" href="features.html">Features</a></li>
@@ -43,8 +43,8 @@
                 <p>This is basic card. It has title and optional action buttons.</p>
             </div>
             <div class="card__actions">
-                <a href="#" class="card__button text--blue-700">Action 1</a>
-                <a href="#" class="card__button text--blue-700">Action 2</a>
+                <a href="#" class="card__button text--indigo">Action 1</a>
+                <a href="#" class="card__button text--indigo">Action 2</a>
             </div>
         </article>
 
@@ -74,16 +74,16 @@
                 <p>Mini Material comes with following types of buttons:</p>
 
                 <h4 class="heading--6">Regular</h4>
-                    <button class="button color--blue text--white">Hi there!</button>
-                    <button class="button button--disabled color--blue text--white">Disabled</button>
+                    <button class="button color--indigo text--white">Hi there!</button>
+                    <button class="button button--disabled color--indigo text--white">Disabled</button>
 
                 <h4 class="heading--6">Large</h4>
-                    <button class="button button--large color--blue text--white">Hello sir!</button>
-                    <button class="button button--large button--disabled color--blue text--white">Disabled</button>
+                    <button class="button button--large color--indigo text--white">Hello sir!</button>
+                    <button class="button button--large button--disabled color--indigo text--white">Disabled</button>
 
                 <h4 class="heading--6">Flat</h4>
-                    <button class="button button--flat text--blue">What's up?</button>
-                    <button class="button button--flat button--disabled text--blue">Disabled</button>
+                    <button class="button button--flat text--indigo">What's up?</button>
+                    <button class="button button--flat button--disabled text--indigo">Disabled</button>
 
                 <h4 class="heading--6">Floating Action Button</h4>
                     <p>It's floating in bottom right corner.</p>
@@ -150,7 +150,7 @@
         <article class="card color--white text--black">
             <h3 class="card__title" id="colors">Colors</h3>
             <div class="card__content">
-                <p>Color Palette includes all 275 colors from <a href="https://www.google.com/design/spec/style/color.html#color-color-palette" class="typography--link text--blue">Google Material Design guidelines</a>. Here are some exemplary classes:
+                <p>Color Palette includes all 275 colors from <a href="https://www.google.com/design/spec/style/color.html#color-color-palette" class="typography--link text--indigo">Google Material Design guidelines</a>. Here are some exemplary classes:
                 <span class="color--red text--white">.color--red</span>, 
                 <span class="color--pink-900 text--white">.color--pink-900</span>, 
                 <span class="color--purple-a700 text--white">.color--purple-a700</span>, 
@@ -168,7 +168,7 @@
         <article class="card color--white text--black">
             <h3 class="card__title" id="forms">Forms</h3>
             <div class="card__content">
-                <p>Mini Material has classes for creating text fields:</p>
+                <h4 class="heading--6">Text fields</h4>
                 <form action="#" id="form">
                     <div class="text-field" id="form-name">
                         <input type="text" class="text-field__input" placeholder="John" id="form__first-name">
@@ -185,6 +185,56 @@
                         <label for="form__about" class="text-field__label">Something about you</label>
                     </div>
                 </form>
+
+                <div class="grid">
+                    <div class="grid__col grid__col--1 grid__col--m--1-3">
+                        <h4 class="heading--6">Checkboxes</h4>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox1" class="checkbox__input" checked>
+                            <label for="checkbox1" class="checkbox__label">Checkbox 1</label>
+                        </div><br>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox2" class="checkbox__input">
+                            <label for="checkbox2" class="checkbox__label">Checkbox 2</label>
+                        </div><br>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox3" class="checkbox__input">
+                            <label for="checkbox3" class="checkbox__label">Checkbox 3</label>
+                        </div><br>
+                    </div>
+
+                    <div class="grid__col grid__col--1 grid__col--m--1-3">
+                        <h4 class="heading--6">Radio buttons</h4>
+                        <div class="radio">
+                            <input type="radio" name="radio" id="radio1" class="radio__input" checked>
+                            <label for="radio1" class="radio__label">Radio 1</label>
+                        </div><br>
+                        <div class="radio">
+                            <input type="radio" name="radio" id="radio2" class="radio__input">
+                            <label for="radio2" class="radio__label">Radio 2</label>
+                        </div><br>
+                        <div class="radio">
+                            <input type="radio" name="radio" id="radio3" class="radio__input">
+                            <label for="radio3" class="radio__label">Radio 3</label>
+                        </div><br>
+                    </div>
+
+                    <div class="grid__col grid__col--1 grid__col--m--1-3">
+                        <h4 class="heading--6">Switches</h4>
+                        <div class="switch">
+                            <input type="checkbox" id="switch1" class="switch__input" checked>
+                            <label for="switch1" class="switch__label">Switch 1</label>
+                        </div><br>
+                        <div class="switch">
+                            <input type="checkbox" id="switch2" class="switch__input">
+                            <label for="switch2" class="switch__label">Switch 2</label>
+                        </div><br>
+                        <div class="switch">
+                            <input type="checkbox" id="switch3" class="switch__input">
+                            <label for="switch3" class="switch__label">Switch 3</label>
+                        </div><br>
+                    </div>
+                </div>
             </div>
         </article>
 
@@ -233,7 +283,7 @@
         <article class="card color--white text--black">
             <h3 class="card__title" id="variables">SASS Variables</h3>
             <div class="card__content">
-                <p>If you are using <a href="http://sass-lang.com/" class="typography--link text--blue">SASS</a> you can adjust many aspects of library using variables. For example: </p>
+                <p>If you are using <a href="http://sass-lang.com/" class="typography--link text--indigo">SASS</a> you can adjust many aspects of library using variables. For example: </p>
                 <ul>
                     <li>transition-duration</li>
                     <li>button-height</li>
@@ -254,7 +304,7 @@
         </article>
     </main>
 
-    <footer class="footer color--blue-700 text--white">
+    <footer class="footer color--indigo text--white">
         <div class="footer__left">
             Mini Material by Bazyli Cyran
         </div>
