@@ -271,6 +271,10 @@ Classes:
 * `typography--underline`
 * `typography--blockquote`
 * `typography--link`
+* `typography--align-left`
+* `typography--align-center`
+* `typography--align-right`
+
 
 Example:
 ```html

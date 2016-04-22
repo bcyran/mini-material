@@ -53,6 +53,7 @@ html {
 
 // Styles
 .typography {
+    // Text styles
     &--strong {
         font-weight: 400;
     }
@@ -79,5 +80,18 @@ html {
         &:focus {
             border-bottom: 1px solid currentColor;
         }
+    }
+
+    // Text align
+    &--align-left {
+        text-align: left;
+    }
+
+    &--align-center {
+        text-align: center;
+    }
+
+    &--align-right {
+        text-align: right;
     }
 }

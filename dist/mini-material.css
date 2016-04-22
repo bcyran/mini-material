@@ -2432,6 +2432,15 @@ html {
 .typography--link:hover, .typography--link:focus {
   border-bottom: 1px solid currentColor;
 }
+.typography--align-left {
+  text-align: left;
+}
+.typography--align-center {
+  text-align: center;
+}
+.typography--align-right {
+  text-align: right;
+}
 
 .text-field {
   position: relative;
