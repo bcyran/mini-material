@@ -2965,4 +2965,58 @@ html {
   text-align: left !important;
 }
 
+@-webkit-keyframes ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: .5;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: .5;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+  }
+}
+.ripple {
+  position: relative;
+  outline: none;
+  overflow: hidden;
+}
+.ripple:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: currentColor;
+  visibility: hidden;
+  z-index: 2;
+}
+.ripple:not(:active):before {
+  -webkit-animation: ripple 0.4s cubic-bezier(0, 0, 0.2, 1);
+          animation: ripple 0.4s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: visibility .4s step-end;
+          transition: visibility .4s step-end;
+}
+.ripple:active:before {
+  visibility: visible;
+}
+
 /*# sourceMappingURL=mini-material.css.map */

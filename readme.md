@@ -23,7 +23,8 @@ Table of contents:
 10. [Headings](#headings)
 11. [Colors](#colors)
 12. [Media Queries](#media-queries)
-13. [SASS VAriables](#sass-variables)
+13. [Ripple](#ripple)
+14. [SASS VAriables](#sass-variables)
 
 ### Layout
 Classes:
@@ -357,12 +358,24 @@ Example:
 <div class="hide--l">hide--l</div>
 ```
 *hide* classes can be confusing. For example `hide--m--up` doesn't mean *hide above medium* but *hide on medium and above*.
-If you watch behaviour of `hide--m--up` and `hide--m--down` while resizing browser window, you will see that `hide--m--down` triggers at the top breakpoint and `hide--m--up` at the bottom one. Thus on the the m-sized screen both of them will be hidden.
+If you watch behavior of `hide--m--up` and `hide--m--down` while resizing browser window, you will see that `hide--m--down` triggers at the top breakpoint and `hide--m--up` at the bottom one. Thus on the the m-sized screen both of them will be hidden.
 
 There are no *show* classes.
 
+### Ripple
+Classes:
+* `ripple`
+
+Example:
+```html
+<button class="button ripple">Ripple!</button>
+```
+
+`.ripple` is universal class which theoretically works with all elements with :active pseudo-class. However it's not even remotely as good as other implementations using JS. It should work fine on buttons and menu items but be careful when using it on other elements.
+
 ### SASS Variables
 If you are using SASS you can adjust many aspects of library using variables.
+
 
 ## Special Thanks
 Special thanks to [Nilorea](https://www.facebook.com/niloreaart) for huge help with English translation.

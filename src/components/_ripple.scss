@@ -1,0 +1,44 @@
+// Ripple animation
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: .5;
+    }
+
+    100% {
+        width: 150px;
+        height: 150px;
+        opacity: 0;
+    }
+}
+
+// Ripple
+.ripple {
+    position: relative;
+    outline: none;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: currentColor;
+        visibility: hidden;
+        z-index: 2;
+    }
+
+    &:not(:active):before {
+        animation: ripple .4s cubic-bezier(0, 0, .2, 1);
+        transition: visibility .4s step-end;
+    }
+
+    &:active:before {
+        visibility: visible;
+    }
+}
